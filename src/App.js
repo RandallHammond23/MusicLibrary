@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import navBar from './components/NavBar/NavBar';
-
+import NavBar from './components/NavBar/NavBar';
+import  './App.css';
 
 
 
@@ -16,7 +16,7 @@ class App extends Component{
 
 
   async componentDidMount() {
-    await axios.get(`http://www.devcodecampmusiclibrary.com/`) 
+    await axios.get(`http://www.devcodecampmusiclibrary.com/api/music`) 
   
   }
 
@@ -24,7 +24,7 @@ class App extends Component{
 
   render(){
     return (
-      <div> <navBar/> </div>
+      <div> <NavBar/> </div>
     )
     
 

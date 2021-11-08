@@ -1,0 +1,10 @@
+
+
+
+body{
+    background-image: url("./backgroud\ photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;    
+    display: grid;
+    place-content: center;
+}
