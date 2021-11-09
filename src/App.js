@@ -3,6 +3,7 @@ import axios from 'axios';
 import NavBar from './components/NavBar/NavBar';
 import  './App.css';
 import MusicTable from './components/MusicTable/MusicTable';
+import SearchBar from './components/SearchBar/SearchBar';
 
 
 
@@ -33,7 +34,9 @@ class App extends Component{
     return (
       <div> 
         <NavBar/>
+        <SearchBar/>
         <MusicTable music = {this.state.music}/>
+        
        </div>
     )
     
